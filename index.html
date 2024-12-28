@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Гра на клавіатурі</title>
+  </head>
+  <body>
+    <h1>Гра: Натисніть потрібну клавішу!</h1>
+    <div id="game">
+      <p>Натисніть цю клавішу: <span id="key"></span></p>
+      <button id="newGame">Нова гра</button>
+    </div>
+
+    <canvas id="sales-chart"></canvas>
+
+    <script
+      type="text/javascript"
+      src="node_modules/@pnotify/core/dist/PNotify.js"
+    ></script>
+    <link
+      href="node_modules/@pnotify/core/dist/PNotify.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script
+      type="text/javascript"
+      src="node_modules/@pnotify/mobile/dist/PNotifyMobile.js"
+    ></script>
+    <link
+      href="node_modules/@pnotify/mobile/dist/PNotifyMobile.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script type="text/javascript">
+      PNotify.defaultModules.set(PNotifyMobile, {});
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
